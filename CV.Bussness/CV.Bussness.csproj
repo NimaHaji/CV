@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CV.DAL\CV.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Services\Implementation\" />
+  </ItemGroup>
+
 </Project>
