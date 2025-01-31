@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'IranSans';
+  src: url('../fonts/iransans/IRANSansLight.woff') format('woff2')
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -229,6 +234,7 @@ footer a:not(.nav-link) {
 }
 
 .marker {
+  font-family: 'IranSans';
   position: relative;
   display: inline;
   width: auto;
@@ -240,15 +246,15 @@ footer a:not(.nav-link) {
 
 .marker:after {
   content: "";
-  width: 125px;
-  height: 30px;
+  width: 125px; /* عرض خط */
+  height: 30px; /* ارتفاع خط */
   position: absolute;
-  bottom: -25px;
-  right: -30px;
+  bottom: -25px; /* فاصله از پایین متن */
+  left: 0; /* خط را به چپ منتقل می‌کند */
   background: url("../images/marker.svg");
   background-repeat: no-repeat;
-  color: #0cff00;
 }
+
 
 .marker-center:after {
   bottom: -30px;
